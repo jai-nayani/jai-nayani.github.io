@@ -21,7 +21,7 @@ const About = () => {
             <div className="profile-image-container small">
               <ProfileImage3D 
                 size="small"
-                imageSrc="/images/profile-photo.jpg" // Update this path to your image
+                imageSrc="/images/profile/profile-photo.jpg" // Updated path to profile folder
                 alt="Jai Adithya Ram Nayani"
               />
             </div>

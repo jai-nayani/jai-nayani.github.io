@@ -70,7 +70,7 @@ const Portfolio = () => {
           <ProfileImage3D 
             size="large"
             onClick={handleProfileClick}
-            imageSrc="/images/profile-photo.jpg" // Update this path to your image
+            imageSrc="/images/profile/profile-photo.jpg" // Updated path to profile folder
             alt="Jai Adithya Ram Nayani"
           />
         </div>
