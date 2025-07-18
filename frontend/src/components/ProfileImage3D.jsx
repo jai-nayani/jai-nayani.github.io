@@ -61,7 +61,16 @@ const ProfileImage3D = ({
           src={imageSrc} 
           alt={alt} 
           className="main-image"
+          onLoad={(e) => {
+            console.log('Image loaded successfully:', imageSrc);
+            e.target.style.display = 'block';
+            const placeholder = e.target.parentElement.querySelector('.profile-placeholder');
+            if (placeholder) {
+              placeholder.style.display = 'none';
+            }
+          }}
           onError={(e) => {
+            console.error('Image failed to load:', imageSrc);
             // Fallback to placeholder if image fails to load
             e.target.style.display = 'none';
             const placeholder = e.target.parentElement.querySelector('.profile-placeholder');
