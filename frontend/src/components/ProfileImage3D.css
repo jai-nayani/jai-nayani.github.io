@@ -123,20 +123,20 @@
   transform: translateZ(-10px) scale(1.02);
 }
 
-/* Size variations */
+/* Size variations - Modern UI/UX optimized sizes */
 .profile-image-3d-large .image-wrapper {
-  width: 400px;
-  height: 500px;
+  width: 320px;
+  height: 400px;
 }
 
 .profile-image-3d-medium .image-wrapper {
-  width: 300px;
-  height: 375px;
+  width: 240px;
+  height: 300px;
 }
 
 .profile-image-3d-small .image-wrapper {
-  width: 200px;
-  height: 250px;
+  width: 160px;
+  height: 200px;
 }
 
 .profile-image-3d-small .profile-placeholder {
@@ -161,33 +161,33 @@
   animation: float 6s ease-in-out infinite;
 }
 
-/* Responsive design */
+/* Responsive design - Modern proportions */
 @media (max-width: 768px) {
   .profile-image-3d-large .image-wrapper {
-    width: 300px;
-    height: 375px;
-  }
-  
-  .profile-image-3d-medium .image-wrapper {
-    width: 250px;
-    height: 312px;
-  }
-  
-  .profile-image-3d-small .image-wrapper {
-    width: 150px;
-    height: 187px;
-  }
-}
-
-@media (max-width: 480px) {
-  .profile-image-3d-large .image-wrapper {
-    width: 250px;
-    height: 312px;
+    width: 280px;
+    height: 350px;
   }
   
   .profile-image-3d-medium .image-wrapper {
     width: 200px;
     height: 250px;
+  }
+  
+  .profile-image-3d-small .image-wrapper {
+    width: 140px;
+    height: 175px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-image-3d-large .image-wrapper {
+    width: 240px;
+    height: 300px;
+  }
+  
+  .profile-image-3d-medium .image-wrapper {
+    width: 180px;
+    height: 225px;
   }
   
   .profile-image-3d-small .image-wrapper {
