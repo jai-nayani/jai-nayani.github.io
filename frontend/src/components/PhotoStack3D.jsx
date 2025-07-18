@@ -13,7 +13,7 @@ const PhotoStack3D = ({ isOpen, onClose, photos = [] }) => {
   // Fetch images from backend API
   useEffect(() => {
     if (photos.length === 0 && isOpen) {
-      fetch('/api/images')
+      fetch('https://jai-adithya.up.railway.app/api/images')
         .then(res => res.json())
         .then(data => {
           if (Array.isArray(data.images)) {
@@ -24,7 +24,7 @@ const PhotoStack3D = ({ isOpen, onClose, photos = [] }) => {
             setDynamicPhotos(
               filtered.map((filename, idx) => ({
                 id: idx + 1,
-                src: `/images/${filename}`,
+                src: `https://jai-adithya.up.railway.app/images/${filename}`,
                 alt: filename
               }))
             );

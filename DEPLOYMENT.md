@@ -1,83 +1,194 @@
-# Portfolio Deployment Guide
+# Deployment Guide - Portfolio Website
 
-## Deploy Both Frontend & Backend for Free on Railway
+This guide covers the deployment process for both the frontend (GitHub Pages) and backend (Railway) components of the portfolio website.
 
-### Prerequisites
+## 🌐 Live URLs
+
+- **Frontend**: https://jai-nayani.github.io/Portfolio-main/
+- **Backend API**: https://jai-adithya.up.railway.app
+
+## 📋 Prerequisites
+
 - GitHub account
-- Railway account (free at railway.app)
+- Railway account
+- MongoDB Atlas account (for database)
+- Node.js and Yarn installed locally
 
-### Step 1: Prepare Your Repository
+## 🚀 Frontend Deployment (GitHub Pages)
 
-1. **Push your code to GitHub:**
+### Step 1: Prepare Frontend for Deployment
+
+1. **Install gh-pages package** (if not already installed):
+   ```bash
+   cd frontend
+   yarn add gh-pages --dev
+   ```
+
+2. **Update package.json**:
+   - Set `homepage` to your GitHub Pages URL
+   - Add deployment scripts:
+   ```json
+   {
+     "homepage": "https://jai-nayani.github.io/Portfolio-main",
+     "scripts": {
+       "predeploy": "yarn build",
+       "deploy": "gh-pages -d build"
+     }
+   }
+   ```
+
+3. **Update API endpoints** to use production backend URL:
+   - Replace localhost URLs with Railway backend URL
+   - Example: `https://jai-adithya.up.railway.app/api/images`
+
+### Step 2: Deploy to GitHub Pages
+
 ```bash
-git init
+cd frontend
+yarn deploy
+```
+
+### Step 3: Configure GitHub Pages
+
+1. Go to your GitHub repository settings
+2. Navigate to "Pages" section
+3. Set source to "Deploy from a branch"
+4. Select `gh-pages` branch
+5. Save configuration
+
+## 🔧 Backend Deployment (Railway)
+
+### Step 1: Prepare Backend for Deployment
+
+1. **Ensure backend files are ready**:
+   - `server.py` - Main FastAPI application
+   - `requirements.txt` - Python dependencies
+   - `Procfile` - Railway start command
+   - `railway.json` - Railway configuration
+
+2. **Environment Variables** (set in Railway dashboard):
+   ```
+   MONGO_URL=your_mongodb_connection_string
+   DB_NAME=your_database_name
+   PORT=8000
+   ```
+
+### Step 2: Deploy to Railway
+
+1. **Create Railway Account**:
+   - Go to [railway.app](https://railway.app)
+   - Sign up with GitHub
+
+2. **Create New Project**:
+   - Click "New Project"
+   - Select "Deploy from GitHub repo"
+   - Choose your repository
+
+3. **Configure Service**:
+   - Set root directory to `backend`
+   - Railway will auto-detect Python/FastAPI
+
+4. **Set Environment Variables**:
+   - Go to service settings
+   - Add required environment variables
+   - Save changes
+
+5. **Deploy**:
+   - Railway will automatically deploy on push to main branch
+   - Monitor deployment logs for any issues
+
+### Step 3: Get Public URL
+
+- Railway will provide a public URL (e.g., `https://jai-adithya.up.railway.app`)
+- Use this URL in your frontend API calls
+
+## 🔄 Continuous Deployment
+
+### Frontend Updates
+```bash
+# Make changes to frontend code
+cd frontend
+yarn deploy  # Deploy to GitHub Pages
+```
+
+### Backend Updates
+```bash
+# Make changes to backend code
 git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/yourusername/portfolio-main.git
-git push -u origin main
+git commit -m "Update backend"
+git push origin main  # Railway auto-deploys
 ```
 
-### Step 2: Deploy Backend on Railway
+## 🐛 Troubleshooting
 
-1. **Go to [Railway.app](https://railway.app)**
-2. **Sign up/Login with GitHub**
-3. **Click "New Project" → "Deploy from GitHub repo"**
-4. **Select your repository**
-5. **Choose the `backend` folder**
-6. **Add Environment Variables:**
-   - `MONGO_URL`: Your MongoDB connection string
-   - `DB_NAME`: Your database name (e.g., `portfolio`)
-7. **Railway will auto-deploy your FastAPI backend**
+### Frontend Issues
+- **Build fails**: Check for syntax errors in React components
+- **API calls fail**: Verify backend URL is correct
+- **Images not loading**: Check image paths and backend `/api/images` endpoint
 
-### Step 3: Deploy Frontend on Railway
+### Backend Issues
+- **Deployment fails**: Check Railway logs for Python errors
+- **Database connection fails**: Verify MongoDB connection string
+- **CORS errors**: Ensure CORS middleware is configured correctly
 
-1. **In Railway dashboard, click "New Service"**
-2. **Select "GitHub Repo"**
-3. **Choose the same repository but select `frontend` folder**
-4. **Add Environment Variables:**
-   - `REACT_APP_API_URL`: Your backend URL (from Step 2)
-5. **Railway will auto-deploy your React frontend**
+### Common Commands
+```bash
+# Check Railway logs
+railway logs
 
-### Step 4: Configure Domains
+# Restart Railway service
+railway service restart
 
-1. **Backend Domain:** Railway provides a URL like `https://your-backend-name.railway.app`
-2. **Frontend Domain:** Railway provides a URL like `https://your-frontend-name.railway.app`
-3. **Custom Domain (Optional):** Add your own domain in Railway settings
-
-### Step 5: Update Frontend API Calls
-
-Update your frontend to use the production backend URL:
-
-```javascript
-// In your frontend code, replace localhost:8000 with your Railway backend URL
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://your-backend-name.railway.app';
+# Check GitHub Pages deployment
+# Go to repository > Actions tab
 ```
 
-### Step 6: Test Your Deployment
+## 📊 Monitoring
 
-1. **Visit your frontend URL**
-2. **Test all features (modals, photo gallery, etc.)**
-3. **Check that backend API calls work**
+### Frontend Monitoring
+- GitHub Pages deployment status
+- Browser console errors
+- Network requests to backend
 
-### Free Tier Limits
+### Backend Monitoring
+- Railway deployment logs
+- API endpoint health checks
+- Database connection status
 
-**Railway Free Tier:**
-- $5 credit monthly
-- Sufficient for portfolio hosting
-- Auto-sleep after inactivity (wakes up on request)
+## 🔒 Security Considerations
 
-### Alternative: Vercel + Railway
+1. **Environment Variables**: Never commit sensitive data to Git
+2. **CORS**: Configure allowed origins properly
+3. **API Keys**: Store securely in Railway environment variables
+4. **Database**: Use MongoDB Atlas with proper authentication
 
-If you prefer:
-- **Frontend:** Deploy on Vercel (better for React)
-- **Backend:** Deploy on Railway
-- **Connect them:** Update frontend API calls to Railway backend URL
+## 📝 Deployment Checklist
 
-### Troubleshooting
+### Before Deployment
+- [ ] All tests pass
+- [ ] Environment variables configured
+- [ ] API endpoints updated to production URLs
+- [ ] Database connection tested
+- [ ] Images and assets properly linked
 
-1. **Build fails:** Check Railway logs
-2. **API calls fail:** Verify environment variables
-3. **CORS issues:** Backend already configured for CORS
+### After Deployment
+- [ ] Frontend loads correctly
+- [ ] Backend API responds
+- [ ] Photo gallery works
+- [ ] All features functional
+- [ ] Performance acceptable
 
-### Cost: $0/month (Free tier) 
+## 🆘 Support
+
+If you encounter deployment issues:
+
+1. Check Railway logs for backend errors
+2. Verify GitHub Pages deployment status
+3. Test API endpoints manually
+4. Review environment variable configuration
+5. Check database connectivity
+
+For additional help, refer to:
+- [Railway Documentation](https://docs.railway.app/)
+- [GitHub Pages Documentation](https://pages.github.com/)
+- [FastAPI Documentation](https://fastapi.tiangolo.com/)
