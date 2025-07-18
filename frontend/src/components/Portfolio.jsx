@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from 'react';
 import { Link } from "react-router-dom";
 import { mockData } from "../utils/mockData";
 import PhotoStack3D from "./PhotoStack3D";
+import ProfileImage3D from './ProfileImage3D';
 
 const Modal = ({ open, onClose, children }) => {
   React.useEffect(() => {
@@ -66,11 +67,12 @@ const Portfolio = () => {
       {/* Profile Section */}
       <div className="profile-section">
         <div className="profile-image-container">
-          <div className="profile-image" onClick={handleProfileClick} style={{ cursor: 'pointer' }}>
-            <div className="profile-placeholder">
-              JA
-            </div>
-          </div>
+          <ProfileImage3D 
+            size="large"
+            onClick={handleProfileClick}
+            imageSrc="/images/profile-photo.jpg" // Update this path to your image
+            alt="Jai Adithya Ram Nayani"
+          />
         </div>
         <div
           className="profile-name-magnifier-wrapper"

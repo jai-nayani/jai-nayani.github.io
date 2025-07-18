@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { mockData } from "../utils/mockData";
+import ProfileImage3D from './ProfileImage3D';
 
 const About = () => {
   return (
@@ -18,11 +19,11 @@ const About = () => {
         <div className="page-content">
           <div className="about-content">
             <div className="profile-image-container small">
-              <div className="profile-image">
-                <div className="profile-placeholder">
-                  JA
-                </div>
-              </div>
+              <ProfileImage3D 
+                size="small"
+                imageSrc="/images/profile-photo.jpg" // Update this path to your image
+                alt="Jai Adithya Ram Nayani"
+              />
             </div>
             
             <div className="about-text">
