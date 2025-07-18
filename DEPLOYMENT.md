@@ -4,7 +4,7 @@ This guide covers the deployment process for both the frontend (GitHub Pages) an
 
 ## 🌐 Live URLs
 
-- **Frontend**: https://jai-nayani.github.io/Portfolio-main/
+- **Frontend**: https://jai-nayani.github.io/
 - **Backend API**: https://jai-adithya.up.railway.app
 
 ## 📋 Prerequisites
@@ -29,7 +29,7 @@ This guide covers the deployment process for both the frontend (GitHub Pages) an
    - Add deployment scripts:
    ```json
    {
-     "homepage": "https://jai-nayani.github.io/Portfolio-main",
+     "homepage": "https://jai-nayani.github.io",
      "scripts": {
        "predeploy": "yarn build",
        "deploy": "gh-pages -d build"

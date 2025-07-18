@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with React frontend and FastAPI bac
 
 ## 🌐 Live Demo
 
-- **Frontend**: [https://jai-nayani.github.io/Portfolio-main/](https://jai-nayani.github.io/Portfolio-main/)
+- **Frontend**: [https://jai-nayani.github.io/](https://jai-nayani.github.io/)
 - **Backend API**: [https://jai-adithya.up.railway.app](https://jai-adithya.up.railway.app)
 
 ## 🚀 Features
@@ -152,7 +152,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Jai Adithya Ramnayani**
 - GitHub: [@jai-nayani](https://github.com/jai-nayani)
-- Portfolio: [https://jai-nayani.github.io/Portfolio-main/](https://jai-nayani.github.io/Portfolio-main/)
+- Portfolio: [https://jai-nayani.github.io/](https://jai-nayani.github.io/)
 
 ## 🙏 Acknowledgments
 
