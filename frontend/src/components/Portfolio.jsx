@@ -70,7 +70,7 @@ const Portfolio = () => {
           <ProfileImage3D 
             size="large"
             onClick={handleProfileClick}
-            imageSrc="/images/profile/profile-photo.jpg?v=1" // Added cache-busting parameter
+            imageSrc="/images/profile/profile-photo.jpg?v=2" // Updated cache-busting parameter for new image
             alt="Jai Adithya Ram Nayani"
           />
         </div>
