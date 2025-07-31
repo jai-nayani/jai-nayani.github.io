@@ -21,7 +21,7 @@ const About = () => {
             <div className="profile-image-container small">
               <ProfileImage3D 
                 size="small"
-                imageSrc="/images/profile/profile-photo.jpg?v=2" // Updated cache-busting parameter for new image
+                imageSrc="/images/profile/profile-photo.jpg?v=3&cache=false" // Strong cache-busting for new image
                 alt="Jai Adithya Ram Nayani"
               />
             </div>
