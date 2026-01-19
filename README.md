@@ -1,21 +1,18 @@
 # Portfolio Website - Jai Adithya Ramnayani
 
-A modern, responsive portfolio website built with React frontend and FastAPI backend, featuring a 3D photo gallery and dynamic content management.
+A modern, responsive portfolio website built with React frontend, featuring a 3D photo gallery and dynamic content management.
 
 ## 🌐 Live Demo
 
-- **Frontend**: [https://jai-nayani.github.io/](https://jai-nayani.github.io/)
-- **Backend API**: [https://jai-adithya.up.railway.app](https://jai-adithya.up.railway.app)
+- **Portfolio**: [https://jai-nayani.github.io/](https://jai-nayani.github.io/)
 
 ## 🚀 Features
 
-- **Modern React Frontend** with Tailwind CSS and Radix UI components
-- **FastAPI Backend** with MongoDB integration
-- **3D Photo Gallery** with dynamic image loading
+- **Modern React Frontend** with Tailwind CSS and shadcn UI components
+- **3D Photo Gallery** with local image management
 - **Responsive Design** optimized for all devices
-- **Real-time API** for dynamic content
-- **GitHub Pages** hosting for frontend
-- **Railway** hosting for backend
+- **Static Site** deployment on GitHub Pages
+- **Modern Typography** with Plus Jakarta Sans font
 
 ## 🛠️ Tech Stack
 
@@ -26,17 +23,8 @@ A modern, responsive portfolio website built with React frontend and FastAPI bac
 - CRACO (Create React App Configuration Override)
 - React Router DOM
 
-### Backend
-- FastAPI
-- Uvicorn
-- Motor (Async MongoDB driver)
-- Pydantic
-- Python-dotenv
-
 ### Deployment
-- GitHub Pages (Frontend)
-- Railway (Backend)
-- MongoDB Atlas (Database)
+- GitHub Pages (Static Site Hosting)
 
 ## 📁 Project Structure
 
@@ -49,12 +37,9 @@ Portfolio-main/
 │   │   ├── lib/            # Utility libraries
 │   │   └── utils/          # Helper functions
 │   ├── public/             # Static assets
+│   │   └── images/
+│   │       └── gallery/    # Photo gallery images
 │   └── package.json        # Frontend dependencies
-├── backend/                # FastAPI server
-│   ├── server.py          # Main server file
-│   ├── requirements.txt   # Python dependencies
-│   ├── Procfile          # Railway deployment config
-│   └── railway.json      # Railway configuration
 └── README.md             # This file
 ```
 
@@ -62,78 +47,48 @@ Portfolio-main/
 
 ### Prerequisites
 - Node.js (v16 or higher)
-- Python (v3.8 or higher)
 - Yarn package manager
-- MongoDB database
 
-### Frontend Development
+### Development
 ```bash
 cd frontend
 yarn install
 yarn start
 ```
-Frontend will be available at `http://localhost:3000`
-
-### Backend Development
-```bash
-cd backend
-pip install -r requirements.txt
-python server.py
-```
-Backend will be available at `http://localhost:8000`
-
-### Environment Variables
-Create a `.env` file in the backend directory:
-```env
-MONGO_URL=your_mongodb_connection_string
-DB_NAME=your_database_name
-```
+Portfolio will be available at `http://localhost:3000`
 
 ## 🚀 Deployment
 
-### Frontend Deployment (GitHub Pages)
+### GitHub Pages Deployment
 ```bash
 cd frontend
 yarn deploy
 ```
-The frontend is automatically deployed to GitHub Pages.
+The portfolio is automatically deployed to GitHub Pages on push to main branch.
 
-### Backend Deployment (Railway)
-1. Connect your GitHub repository to Railway
-2. Set the root directory to `backend`
-3. Configure environment variables in Railway dashboard
-4. Deploy automatically on push to main branch
-
-## 📝 API Endpoints
-
-- `GET /api/` - Health check
-- `GET /api/images` - List available images
-- `POST /api/status` - Create status check
-- `GET /api/status` - Get all status checks
+### Photo Gallery Setup
+1. Add images to `frontend/public/images/gallery/` folder
+2. Update `frontend/public/images/gallery/gallery.json` with image filenames:
+```json
+{
+  "images": ["photo1.jpg", "photo2.png", "photo3.jpg"]
+}
+```
 
 ## 🔧 Development Commands
 
 ```bash
-# Install frontend dependencies
+# Install dependencies
 cd frontend && yarn install
 
-# Start frontend development server
+# Start development server
 cd frontend && yarn start
 
-# Build frontend for production
+# Build for production
 cd frontend && yarn build
 
-# Deploy frontend to GitHub Pages
+# Deploy to GitHub Pages
 cd frontend && yarn deploy
-
-# Install backend dependencies
-cd backend && pip install -r requirements.txt
-
-# Start backend development server
-cd backend && python server.py
-
-# Run backend tests
-cd backend && python -m pytest
 ```
 
 ## 🤝 Contributing
