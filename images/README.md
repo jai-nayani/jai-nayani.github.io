@@ -17,11 +17,7 @@ For profile images, see: [profile/README.md](./profile/README.md)
 
 ## 🖼️ Gallery Images
 
-For photo gallery images, add them to this directory. The backend API will automatically detect and serve them.
-
-## 🔧 Backend Integration
-
-The backend automatically serves images from this directory via the `/api/images` endpoint.
+For photo gallery images, add them to the `gallery/` subdirectory and update `gallery/gallery.json` with the image filenames. See `gallery/README.md` for details.
 
 ## 📝 Supported Formats
 
