@@ -62,28 +62,32 @@ export const mockData = {
       description: "• Constructed a multi-agent AI system using Google Gemini 2.0 Flash and Agent Development Kit (ADK) to ingest real-time data streams from NASA, USGS, and weather APIs. • Orchestrated predictive analytics pipelines with Python for proactive water crisis detection through multi-source environmental data aggregation and autonomous agent coordination.",
       technologies: ["Python", "Google Gemini 2.0", "Agent Development Kit", "NASA API", "USGS API", "Multi-Agent Systems"],
       category: "featured",
-      date: "Dec 2025"
+      date: "Dec 2025",
+      githubUrl: "https://github.com/jai-nayani/AQUA-SENTINEL-Real-Time-AI-Agents-for-Water-Crisis-Prevention"
     },
     {
       title: "AI-Legal-Doc-Assistant",
       description: "• Shipped a full-stack legal document platform using Next.js, TypeScript, and Google Gemini AI with Supabase authentication and cloud storage for secure document processing. • Executed AI-powered document analysis pipelines enabling automated contract review, clause extraction, and legal summary generation through structured prompt engineering and streaming responses.",
       technologies: ["Next.js", "TypeScript", "Google Gemini AI", "Supabase", "Document Processing"],
       category: "featured",
-      date: "Nov 2025"
+      date: "Nov 2025",
+      githubUrl: "https://github.com/jai-nayani/AI-Legal-Doc-Assistant"
     },
     {
       title: "AI Resume Chatbot (jai-llm-chatbot)",
       description: "• Trained a conversational AI assistant using RAG architecture with ChromaDB vector database and Google Gemini, serving low-latency semantic retrieval responses through FastAPI REST endpoints. • Fine-tuned the base model using LoRA (Low-Rank Adaptation) techniques, optimizing inference performance for context-aware Q&A with custom embedding pipelines in Python.",
       technologies: ["Python", "FastAPI", "ChromaDB", "Google Gemini", "RAG", "LoRA Fine-tuning"],
       category: "featured",
-      date: "Sept 2025"
+      date: "Sept 2025",
+      githubUrl: "https://github.com/jai-nayani/jai-llm-chatbot"
     },
     {
       title: "Kaggle Loan Prediction Competition",
       description: "• Ranked Top 10% (321 of 3,724 participants) training stacked ensemble models with XGBoost, LightGBM, and CatBoost, applying advanced feature engineering and pseudo-labeling techniques. • Optimized model performance using SMOTE for class imbalance, GridSearchCV hyperparameter tuning, and SHAP analysis for feature importance interpretation across 15+ behavioral variables.",
       technologies: ["Python", "XGBoost", "LightGBM", "CatBoost", "scikit-learn", "SHAP", "SMOTE"],
       category: "featured",
-      date: "Nov 2025"
+      date: "Nov 2025",
+      githubUrl: "https://github.com/jai-nayani/Kaggle-Loan-Prediction-"
     }
   ],
   

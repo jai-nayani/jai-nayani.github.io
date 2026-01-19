@@ -470,9 +470,39 @@ const Portfolio = () => {
                     ))}
                   </div>
                   <div className="project-footer">
-                    <div className="project-category-badge">
-                      {project.category}
-                    </div>
+                    {project.githubUrl && (
+                      <a 
+                        href={project.githubUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="project-link-btn"
+                        style={{
+                          display: 'inline-block',
+                          padding: '0.5rem 1.5rem',
+                          backgroundColor: 'var(--primary)',
+                          color: 'white',
+                          borderRadius: '0.375rem',
+                          textDecoration: 'none',
+                          fontWeight: 500,
+                          fontSize: '0.875rem',
+                          transition: 'all 0.3s ease',
+                          border: 'none',
+                          cursor: 'pointer'
+                        }}
+                        onMouseEnter={(e) => {
+                          e.target.style.backgroundColor = '#059669';
+                          e.target.style.transform = 'scale(1.05)';
+                          e.target.style.boxShadow = '0 4px 12px rgba(5, 150, 105, 0.3)';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.target.style.backgroundColor = 'var(--primary)';
+                          e.target.style.transform = 'scale(1)';
+                          e.target.style.boxShadow = 'none';
+                        }}
+                      >
+                        Link
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}

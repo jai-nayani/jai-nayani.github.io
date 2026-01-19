@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { mockData } from "../utils/mockData";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "./ui/card";
 import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
 
 const Projects = () => {
   return (
@@ -45,9 +46,21 @@ const Projects = () => {
                   </CardContent>
 
                   <CardFooter>
-                    <Badge variant="default" className="capitalize">
-                      {project.category}
-                    </Badge>
+                    {project.githubUrl && (
+                      <Button 
+                        asChild 
+                        variant="default"
+                        className="w-full"
+                      >
+                        <a 
+                          href={project.githubUrl} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          Link
+                        </a>
+                      </Button>
+                    )}
                   </CardFooter>
                 </Card>
               ))}
