@@ -112,7 +112,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - React team for the amazing framework
-- FastAPI for the high-performance backend
-- Railway for seamless deployment
+- shadcn/ui for beautiful UI components
 - GitHub Pages for static hosting
 - Tailwind CSS for the utility-first CSS framework
+- Plus Jakarta Sans for modern typography
