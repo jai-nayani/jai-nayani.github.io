@@ -1,4 +1,6 @@
-@import './fonts/apercu.css';
+/* Apercu font - only loads if font files are present in /public/fonts/apercu/ */
+/* Uncomment the import below after adding Apercu font files */
+/* @import './fonts/apercu.css'; */
 
 @tailwind base;
 @tailwind components;
