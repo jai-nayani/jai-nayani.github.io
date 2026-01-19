@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { mockData } from "../utils/mockData";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "./ui/card";
+import { Badge } from "./ui/badge";
 
 const Projects = () => {
   return (
@@ -19,67 +21,74 @@ const Projects = () => {
           <div className="projects-content">
             <div className="bento-grid">
               {mockData.projects.map((project, index) => (
-                <div key={index} className={`bento-item ${project.category}`}>
-                  <div className="project-header">
-                    <h3 className="project-title">{project.title}</h3>
-                    <div className="project-technologies">
+                <Card key={index} className={`bento-item ${project.category} hover:shadow-lg transition-shadow`}>
+                  <CardHeader>
+                    <div className="flex items-start justify-between gap-2">
+                      <CardTitle className="text-xl">{project.title}</CardTitle>
+                      {project.date && <Badge variant="outline" className="text-xs">{project.date}</Badge>}
+                    </div>
+                    <div className="flex flex-wrap gap-2 mt-3">
                       {project.technologies.map((tech, techIndex) => (
-                        <span key={techIndex} className="tech-tag">{tech}</span>
+                        <Badge key={techIndex} variant="secondary" className="text-xs">{tech}</Badge>
                       ))}
                     </div>
-                  </div>
+                  </CardHeader>
                   
-                  <div className="project-description">
-                    {project.description.split('•').filter(point => point.trim()).map((point, pointIndex) => (
-                      <div key={pointIndex} className="project-point">
-                        • {point.trim()}
-                      </div>
-                    ))}
-                  </div>
+                  <CardContent>
+                    <CardDescription className="text-sm leading-relaxed">
+                      {project.description.split('•').filter(point => point.trim()).map((point, pointIndex) => (
+                        <div key={pointIndex} className="mb-2">
+                          • {point.trim()}
+                        </div>
+                      ))}
+                    </CardDescription>
+                  </CardContent>
 
-                  <div className="project-footer">
-                    <div className="project-category-badge">
+                  <CardFooter>
+                    <Badge variant="default" className="capitalize">
                       {project.category}
-                    </div>
-                  </div>
-                </div>
+                    </Badge>
+                  </CardFooter>
+                </Card>
               ))}
               
               {/* Additional Bento Items for Visual Interest */}
-              <div className="bento-item small info-card">
-                <div className="info-content">
-                  <h4>Technical Expertise</h4>
-                  <p>Specializing in full-stack development with modern technologies</p>
-                </div>
-              </div>
+              <Card className="bento-item small info-card hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-lg">Technical Expertise</CardTitle>
+                  <CardDescription>Specializing in full-stack AI development with modern technologies</CardDescription>
+                </CardHeader>
+              </Card>
               
-              <div className="bento-item small stats-card">
-                <div className="stats-content">
-                  <div className="stat">
-                    <span className="stat-number">3+</span>
-                    <span className="stat-label">Years Experience</span>
+              <Card className="bento-item small stats-card hover:shadow-lg transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="stats-content">
+                    <div className="stat">
+                      <span className="stat-number">4+</span>
+                      <span className="stat-label">Years Experience</span>
+                    </div>
+                    <div className="stat">
+                      <span className="stat-number">50+</span>
+                      <span className="stat-label">Technologies</span>
+                    </div>
                   </div>
-                  <div className="stat">
-                    <span className="stat-number">10+</span>
-                    <span className="stat-label">Technologies</span>
-                  </div>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
               
-              <div className="bento-item medium contact-card">
-                <div className="contact-content">
-                  <h4>Let's Collaborate</h4>
-                  <p>Always interested in discussing new opportunities and innovative projects.</p>
-                  <div className="contact-buttons">
-                    <a href="mailto:adi.nayani1427@gmail.com" className="contact-btn">
-                      Email Me
-                    </a>
-                    <a href="https://www.linkedin.com/in/jai-adithya-ram-nayaniyani-20363b1a0/" target="_blank" rel="noopener noreferrer" className="contact-btn">
-                      LinkedIn
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <Card className="bento-item medium contact-card hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-lg">Let's Collaborate</CardTitle>
+                  <CardDescription>Always interested in discussing new opportunities and innovative projects.</CardDescription>
+                </CardHeader>
+                <CardFooter className="flex gap-2">
+                  <a href="mailto:adi.nayani1427@gmail.com" className="contact-btn">
+                    Email Me
+                  </a>
+                  <a href="https://www.linkedin.com/in/jai-adithya-ram-nayaniyani-20363b1a0/" target="_blank" rel="noopener noreferrer" className="contact-btn">
+                    LinkedIn
+                  </a>
+                </CardFooter>
+              </Card>
             </div>
           </div>
         </div>

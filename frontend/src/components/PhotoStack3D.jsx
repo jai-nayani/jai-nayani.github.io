@@ -10,25 +10,36 @@ const PhotoStack3D = ({ isOpen, onClose, photos = [] }) => {
   const [dynamicPhotos, setDynamicPhotos] = useState([]);
   const [isFading, setIsFading] = useState(false);
 
-  // Fetch images from backend API
+  // Fetch images from local gallery folder
   useEffect(() => {
     if (photos.length === 0 && isOpen) {
-      fetch('https://jai-adithya.up.railway.app/api/images')
+      // First try to load from gallery.json manifest
+      fetch('/images/gallery/gallery.json')
         .then(res => res.json())
         .then(data => {
-          if (Array.isArray(data.images)) {
-            // Only include supported image formats
+          if (Array.isArray(data.images) && data.images.length > 0) {
+            // Use images from manifest
             const filtered = data.images.filter(filename =>
-              SUPPORTED_EXTENSIONS.some(ext => filename.endsWith(ext))
+              SUPPORTED_EXTENSIONS.some(ext => filename.toLowerCase().endsWith(ext.toLowerCase()))
             );
             setDynamicPhotos(
               filtered.map((filename, idx) => ({
                 id: idx + 1,
-                src: `https://jai-adithya.up.railway.app/images/${filename}`,
+                src: `/images/gallery/${filename}`,
                 alt: filename
               }))
             );
+          } else {
+            // Fallback: Try to load common image names or use empty array
+            // Users can add images to gallery.json or place images in /images/gallery/ folder
+            // and update gallery.json with the filenames
+            setDynamicPhotos([]);
           }
+        })
+        .catch(() => {
+          // If gallery.json doesn't exist, set empty array
+          // Users should create gallery.json with image filenames
+          setDynamicPhotos([]);
         });
     }
   }, [photos.length, isOpen]);

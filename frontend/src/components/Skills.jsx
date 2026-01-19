@@ -19,45 +19,54 @@ const Skills = () => {
           <div className="skills-content">
             <div className="skills-grid">
               <div className="skill-category">
-                <h3 className="category-title">Languages</h3>
+                <h3 className="category-title">Programming Languages</h3>
                 <div className="skill-tags">
-                  {mockData.skills.languages.map((skill, index) => (
+                  {mockData.skills.languages?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </div>
 
               <div className="skill-category">
-                <h3 className="category-title">Frameworks & Libraries</h3>
+                <h3 className="category-title">AI/LLM Ecosystem</h3>
                 <div className="skill-tags">
-                  {mockData.skills.frameworks.map((skill, index) => (
+                  {mockData.skills.aiLLM?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </div>
 
               <div className="skill-category">
-                <h3 className="category-title">J2EE Technologies</h3>
+                <h3 className="category-title">ML Frameworks</h3>
                 <div className="skill-tags">
-                  {mockData.skills.j2ee.map((skill, index) => (
+                  {mockData.skills.mlFrameworks?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </div>
 
               <div className="skill-category">
-                <h3 className="category-title">Web Technologies</h3>
+                <h3 className="category-title">Vector Databases</h3>
                 <div className="skill-tags">
-                  {mockData.skills.web.map((skill, index) => (
+                  {mockData.skills.vectorDatabases?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </div>
 
               <div className="skill-category">
-                <h3 className="category-title">Databases</h3>
+                <h3 className="category-title">Backend & APIs</h3>
                 <div className="skill-tags">
-                  {mockData.skills.databases.map((skill, index) => (
+                  {mockData.skills.backendAPIs?.map((skill, index) => (
+                    <span key={index} className="skill-tag">{skill}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="skill-category">
+                <h3 className="category-title">Frontend</h3>
+                <div className="skill-tags">
+                  {mockData.skills.frontend?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
@@ -66,43 +75,52 @@ const Skills = () => {
               <div className="skill-category">
                 <h3 className="category-title">Cloud Platforms</h3>
                 <div className="skill-tags">
-                  {mockData.skills.cloud.map((skill, index) => (
+                  {mockData.skills.cloudPlatform?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </div>
 
               <div className="skill-category">
-                <h3 className="category-title">Development Tools</h3>
+                <h3 className="category-title">AWS Services</h3>
                 <div className="skill-tags">
-                  {mockData.skills.tools.map((skill, index) => (
+                  {mockData.skills.awsServices?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </div>
 
               <div className="skill-category">
-                <h3 className="category-title">IDEs</h3>
+                <h3 className="category-title">Databases</h3>
                 <div className="skill-tags">
-                  {mockData.skills.ides.map((skill, index) => (
+                  {mockData.skills.databases?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </div>
 
               <div className="skill-category">
-                <h3 className="category-title">Application Servers</h3>
+                <h3 className="category-title">Data & Workflow</h3>
                 <div className="skill-tags">
-                  {mockData.skills.servers.map((skill, index) => (
+                  {mockData.skills.dataWorkflow?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </div>
 
               <div className="skill-category">
-                <h3 className="category-title">Version Control</h3>
+                <h3 className="category-title">DevOps & Observability</h3>
                 <div className="skill-tags">
-                  {mockData.skills.versionControl.map((skill, index) => (
+                  {mockData.skills.devopsObservability?.map((skill, index) => (
+                    <span key={index} className="skill-tag">{skill}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="skill-category">
+                <h3 className="category-title">Product Integrations</h3>
+                <div className="skill-tags">
+                  {mockData.skills.productIntegrations?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
@@ -111,7 +129,7 @@ const Skills = () => {
               <div className="skill-category">
                 <h3 className="category-title">Project Management</h3>
                 <div className="skill-tags">
-                  {mockData.skills.projectManagement.map((skill, index) => (
+                  {mockData.skills.projectManagement?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
@@ -120,7 +138,7 @@ const Skills = () => {
               <div className="skill-category">
                 <h3 className="category-title">Methodologies</h3>
                 <div className="skill-tags">
-                  {mockData.skills.methodologies.map((skill, index) => (
+                  {mockData.skills.methodologies?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>

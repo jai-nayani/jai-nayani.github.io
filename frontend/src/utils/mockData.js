@@ -1,71 +1,137 @@
 export const mockData = {
   name: "Jai Adithya Ram Nayani",
-  title: "Software Engineer",
-  about: "Results-driven Software Engineer with 3+ years of progressive experience architecting, developing, and optimizing full-stack solutions across fintech and higher education domains. Proven expertise in uplifting monolithic platforms to microservices using Java, Spring Boot, and AWS, as well as building accessible, user-centric web applications with React.js, PHP (Drupal), and Python. Adept at designing robust APIs, optimizing relational and cloud-native databases, and deploying scalable systems via CI/CD pipelines, Docker, and cloud services. Demonstrated success in driving code efficiency, performance, and regulatory compliance through automation, DevOps collaboration, and secure authentication practices. Passionate about leveraging cross-functional teamwork and emerging technologies to deliver business-critical solutions and inclusive digital experiences in fast-paced, growth-oriented environments. Seeking a challenging opportunity to innovate, lead, and drive technical excellence as part of a collaborative, high-impact engineering team.",
+  title: "Full-Stack AI Engineer",
+  about: "Full-Stack AI Engineer with 4+ years building production systems across healthcare SaaS, fintech, and accessibility platforms. Shipped LLM-powered applications using RAG pipelines, multi-agent architectures (Google Gemini 2.0, LangChain, ChromaDB), and scalable backends with Python, FastAPI, Next.js, TypeScript, PostgreSQL, and AWS. Transformed monolithic fintech platforms into microservices processing 50TB+ datasets. Built HIPAA-aligned healthcare automation serving 50+ medical facilities with 50-70% operational time savings. Proven ability to ship 0→1 products at startup velocity while bridging engineering, product, and business stakeholders. Y Combinator Vibecon 2025 selectee (Top 200 from 30,000+ applicants) | Kaggle Top 10% (321/3,724) | McKinsey Forward \"Super Learner\"",
   
   workExperience: [
     {
-      title: "Software Developer",
-      company: "George Mason University, Virginia",
-      duration: "January 2024 – May 2025",
-      description: "• Architected and enhanced accessible website modules for the Mason LIFE disability support platform leveraging Java, Spring Boot, PHP with Drupal, JavaScript, and HTML5/CSS3 to deliver WCAG-compliant, intuitive user interfaces specifically designed for individuals with intellectual and developmental disabilities. • Optimized robust database schemas and SQL queries across MySQL and PostgreSQL environments, enabling secure, efficient storage and retrieval of user applications, program data, and analytics for high-volume educational modules. • Orchestrated RESTful API development and integrated third-party services including Dynamic Forms, authentication systems, and payment gateways, utilizing AWS Athena for complex data analytics and orchestration workflows that streamlined digital admissions, housing, and student resource processes for seamless interoperability. • Crafted dynamic and responsive front-end applications using AngularJS with TypeScript, implementing component-based architecture, two-way data binding, and dependency injection to create intuitive user interfaces with Bootstrap for responsive design, ensuring mobile-first principles and cross-browser compatibility for enhanced user engagement. • Streamlined CI/CD pipelines using Jenkins and GitHub Actions, supporting cloud deployments on AWS infrastructure including EC2, S3, and Lambda with Kubernetes cluster orchestration for scalable application delivery. • Validated automated test suites using JUnit and Mockito while leveraging Google Analytics for performance monitoring to ensure accessibility compliance and rapid troubleshooting in collaboration with cross-functional teams."
+      title: "Founding Engineer",
+      company: "Stealth AI Startup (Healthcare) | Remote USA",
+      duration: "May 2025 – Oct 2025",
+      description: "• Developed a HIPAA-aligned healthcare B2B platform using React, Next.js, and Node.js (NestJS), automating scheduling, billing, pharmacy, and financial workflows for 50+ medical facilities with 50-70% operational time savings. • Implemented data governance controls with PostgreSQL OLAP reporting, MongoDB state management, and AWS Cognito/KMS for authentication and encryption, ensuring RBAC authorization and audit compliance across patient data workflows. • Built Python-based OCR pipelines using Tesseract for invoice ingestion, deployed via Docker containers, and integrated n8n orchestration with Twilio/WhatsApp notifications for real-time appointment confirmations."
     },
     {
       title: "Software Engineer",
-      company: "Humint Global Technologies Pvt Ltd, India (Full Time)",
-      duration: "January 2021 – July 2023",
-      description: "• Spearheaded the transformation of monolithic fintech platforms to scalable, microservices-based architectures utilizing Java, Spring Boot with Spring MVC and Spring Cloud Gateway, implementing containerization technologies with Docker orchestration and Kubernetes deployment strategies, achieving a 90% increase in code efficiency and ensuring robust data orchestration for regulatory compliance and real-time analytics solutions. • Engineered relational and cloud-native database schemas across MySQL, Aurora, and Snowflake environments, implementing advanced indexing strategies with partitioning optimization, automated data quality pipelines, and ETL orchestration workflows leveraging Apache Spark distributed processing that optimized data storage and retrieval processes while boosting data processing speeds by 50%. • Designed and refined RESTful APIs and secure integration gateways leveraging API Gateway with rate limiting mechanisms, OAuth 2.0, and IAM protocols, enabling seamless data flow and automating real-time data ingestion and transformation pipelines with Apache Airflow DAG workflows and PySpark distributed computing for enhanced interoperability. • Accelerated dynamic front-end development using React.js with Material UI, TypeScript, and Figma-driven design systems, implementing UI components with modern CSS frameworks and deploying Cypress-based automated testing suites, reducing UI defect rates by 35%. • Coordinated with DevOps and QA teams in Agile environments using JIRA for sprint management, applying Test Driven Development methodologies with JUnit, Mockito, and SonarQube for code quality analysis, Maven and Gradle for build automation frameworks. • Launched containerized solutions on AWS infrastructure utilizing S3, Lambda, Glue, EventBridge, CloudFormation, SNS, and SQS services, implementing advanced monitoring with Splunk and CloudWatch analytics, resulting in 30% fewer deployment failures. • Fortified authentication and authorization controls with Spring Security, JWT tokens, and RBAC solutions, leveraging Postman for comprehensive API testing to ensure PCI-compliant transaction flows and regulatory audit readiness for financial operations."
+      company: "George Mason University | Virginia",
+      duration: "January 2024 – May 2025",
+      description: "• Designed accessible web modules for the Mason LIFE platform using React, TypeScript, and PostgreSQL, delivering WCAG-compliant interfaces that streamlined admissions and student resource workflows for neurodiverse learners. • Integrated RESTful APIs with AWS Athena analytics, Dynamic Forms, and payment gateways, enabling real-time data orchestration across MySQL and PostgreSQL environments for high-volume educational data processing. • Configured CI/CD pipelines using GitHub Actions and Jenkins, deploying Docker containerized applications on AWS infrastructure (EC2, S3, Lambda) with Kubernetes orchestration for scalable, zero-downtime releases. • Validated automated test suites with JUnit and Mockito, implementing Google Analytics performance monitoring to ensure accessibility compliance and rapid troubleshooting across cross-functional development teams."
     },
     {
-      title: "Jr. Developer",
-      company: "Keshav Memorial Institute of Technology",
-      duration: "January 2021 – February 2022",
-      description: "• Conceptualized and developed scalable full-stack educational management systems utilizing React.js, JavaScript, PHP, and MySQL, implementing robust MVC architecture patterns to support comprehensive student information management, fee processing workflows, and administrative operations for 5,000+ students. • Revolutionized high-performance database optimization strategies by redesigning indexing mechanisms, crafting complex SQL queries, and implementing advanced data modeling techniques within student management and payment processing ecosystems, resulting in a 40% improvement in query response times and enhanced system scalability. • Integrated secure payment gateway solutions across diverse multi-channel transaction APIs including UPI, cards, net banking, and digital wallets, enabling instant fee processing with QR-based authentication and automated receipts, resulting in 95% faster transaction processing and seamless payment experiences for students and administrators. • Constructed comprehensive RESTful API architecture and automated backend integration scripts to facilitate seamless ERP system connectivity and student portal synchronization, enabling real-time financial reconciliation, automated fee notification systems, and cross-departmental reporting capabilities for enhanced operational efficiency. • Modernized responsive user interface components using React.js with hooks like useState and useEffect, CSS3 Grid and Flexbox layouts, and ES6+ JavaScript features to create intuitive admin dashboards and modular UI components, leveraging component-based architecture with reusable design patterns. • Provisioned robust DevOps infrastructure by managing Apache web servers and implementing Git-driven CI/CD pipelines with automated testing and deployment capabilities, enabling zero-downtime releases, rollback functionalities, and maintaining containerized services in production environments for enhanced system reliability."
+      title: "Software Engineer",
+      company: "Humint Global Technologies | India",
+      duration: "January 2021 – July 2023",
+      description: "• Engineered data pipelines processing 50TB+ datasets using Python, PySpark, and Apache Airflow DAG orchestration across MySQL, Aurora, and Snowflake, accelerating data throughput by 50% for real-time financial analytics. • Created dynamic frontend interfaces using React with TypeScript and Material UI, deploying Cypress-based automated testing suites that reduced UI defect rates by 35% across customer-facing fintech applications. • Deployed containerized microservices on AWS (S3, Lambda, Glue, EventBridge, SNS, SQS) with Docker and Kubernetes, implementing Splunk and CloudWatch monitoring to reduce deployment failures by 30%. • Transformed monolithic fintech platforms into microservices using Java, Spring Boot, and Spring Cloud Gateway, implementing OAuth 2.0 and API Gateway rate limiting for PCI-compliant transaction flows."
     }
   ],
   
   education: [
     {
       school: "George Mason University, Virginia",
-      degree: "Master of Science in Computer Science",
+      degree: "Master of Science, Computer Science",
       duration: "May 2025",
       gpa: "3.60"
     },
     {
-      school: "Jawaharlal Nehru Technological University (JNTU-H)",
-      degree: "Bachelor of Engineering in Computer Science",
+      school: "Jawaharlal Nehru Technological University (JNTU-H), India",
+      degree: "Bachelors, Computer Science Engineering",
       duration: "July 2023", 
       gpa: "3.85"
     }
   ],
   
   skills: {
-    languages: ["C/C++", "C#", "Java", "PHP", "Python", "Scala", "SQL"],
-    frameworks: ["Angular", "Hibernate", "iOS SDK", "JSF", "Node.js", "React.js", "Spring Boot", "Spring MVC", "Spring Security"],
-    j2ee: ["JDBC", "JavaBeans", "Java Servlets", "JSP", "JSTL"],
-    web: ["Ajax", "Bootstrap", "CSS", "HTML", "JavaScript", "jQuery", "JSON", "REST", "SOAP", "Web Services", "XML"],
-    databases: ["MongoDB", "MySQL", "NoSQL", "Oracle DB", "PostgreSQL", "SQL Server"],
-    cloud: ["AWS (EC2, S3, Redshift, RDS)", "Google Cloud Platform (GCP)", "Kubernetes", "Microsoft Azure"],
-    tools: ["CI/CD", "Docker", "Elasticsearch", "Gradle", "Google AI Studio", "Jenkins", "JUnit", "Kafka", "Maven", "Microsoft Office", "MS Visio", "Mockito", "Postman", "RabbitMQ", "SonarQube", "Test Driven Development", "TestNG", "UML"],
-    ides: ["IntelliJ IDEA", "Eclipse", "Visual Studio Code", "Cursor", "Google Diffusion", "Trae"],
-    servers: ["Apache Tomcat", "Apache Spark (Big Data Processing)", "WebSphere"],
-    versionControl: ["Git", "GitHub"],
+    languages: ["Python", "Ruby on Rails", "SQL", "Java", "JavaScript", "C", "C++", "R", "Bash"],
+    aiLLM: ["OpenAI API", "Anthropic Claude", "LLaMA", "LlamaIndex", "LangSmith", "MLflow", "Weights & Biases"],
+    mlFrameworks: ["PyTorch", "TensorFlow", "Hugging Face Transformers", "scikit-learn", "Keras"],
+    vectorDatabases: ["Pinecone", "Qdrant", "FAISS", "pgvector", "Weaviate", "ChromaDB"],
+    backendAPIs: ["GraphQL", "gRPC", "Prisma", "tRPC", "FastAPI", "NestJS", "Node.js", "Express"],
+    cloudPlatform: ["GCP (BigQuery, Vertex AI)", "Azure", "Vercel", "Cloudflare", "Fly.io"],
+    awsServices: ["ECS", "Fargate", "RDS", "IAM", "CloudFormation", "CDK", "EC2", "S3", "Lambda", "Cognito", "KMS"],
+    databases: ["Redis", "Elasticsearch", "DynamoDB", "Redshift", "Databricks", "PostgreSQL", "MongoDB", "MySQL", "Snowflake"],
+    dataWorkflow: ["Kafka", "Pandas", "NumPy", "dbt", "Prefect", "Temporal", "Celery", "Jupyter Notebook", "Apache Airflow", "PySpark"],
+    devopsObservability: ["Prometheus", "Grafana", "Datadog", "ArgoCD", "ELK Stack", "Loki", "PagerDuty", "PostHog", "Git", "Sentry", "Helm", "Docker", "Kubernetes", "Jenkins", "GitHub Actions"],
+    frontend: ["Tailwind CSS", "Redux", "Chakra UI", "Next.js", "React.js", "TypeScript", "Angular", "Material UI"],
+    productIntegrations: ["Stripe", "OAuth", "WebSockets", "Segment", "Mixpanel", "Algolia", "Figma"],
     projectManagement: ["Jira", "Confluence", "Notion"],
     methodologies: ["Agile", "Scrum", "SDLC"]
   },
   
   projects: [
     {
-      title: "AI Chatbot Support Portal",
-      description: "• Developed a full-stack support platform using MongoDB, Express, React.js, and Node.js to deliver real-time, context-aware assistance via a clean and responsive chat interface with seamless user experience optimization. • Leveraged OpenAI GPT APIs in the backend to power advanced natural language understanding and conversational flow capabilities, increasing response relevance and reducing support latency for enhanced customer satisfaction. • Assembled a polished React.js frontend with Chakra UI components, custom hooks, and modular architecture featuring threaded messages, dynamic typing indicators, and adaptive themes optimized for mobile and desktop responsiveness. • Secured comprehensive user onboarding with JWT and OAuth authentication, enforced role-based access controls, and hardened communication protocols with HTTPS and Helmet middleware to protect sensitive support interactions.",
-      technologies: ["React.js", "Node.js", "MongoDB", "OpenAI GPT", "JWT", "OAuth"],
-      category: "featured"
+      title: "Aqua-Sentinel: Real-Time AI Agents for Water Crisis Prevention",
+      description: "• Constructed a multi-agent AI system using Google Gemini 2.0 Flash and Agent Development Kit (ADK) to ingest real-time data streams from NASA, USGS, and weather APIs. • Orchestrated predictive analytics pipelines with Python for proactive water crisis detection through multi-source environmental data aggregation and autonomous agent coordination.",
+      technologies: ["Python", "Google Gemini 2.0", "Agent Development Kit", "NASA API", "USGS API", "Multi-Agent Systems"],
+      category: "featured",
+      date: "Dec 2025"
     },
     {
-      title: "Image Recognition Platform with AWS Integration",
-      description: "• Pioneered a cloud-native image analysis platform using Java 8 and Spring Boot backend with Angular frontend, delivering automated object detection and classification through a modern, intuitive web interface with accessible HTML/CSS design principles. • Synchronized AWS-driven media workflows by integrating Amazon Rekognition for deep-learning vision capabilities, S3 for durable storage solutions, SQS for asynchronous microservice communication, and Lambda for serverless processing, achieving elastic performance with zero downtime and high availability. • Automated asynchronous RESTful pipelines and data workflows via Spring Boot APIs, enabling concurrent user uploads, real-time result delivery, and auto-scaling across EC2/ECS clusters, with optional heavy-duty batch processing via AWS EMR for bulk image analytics. • Deployed a responsive Angular frontend with secure authentication via JWT/OAuth protocols, implemented CI/CD on AWS using Docker containerization, ECS orchestration, and Spring Boot images in AWS Fargate, ensuring end-to-end data security, performance monitoring, and cross-functional collaboration.",
-      technologies: ["Java", "Spring Boot", "Angular", "AWS", "Amazon Rekognition", "Docker"],
-      category: "featured"
+      title: "AI-Legal-Doc-Assistant",
+      description: "• Shipped a full-stack legal document platform using Next.js, TypeScript, and Google Gemini AI with Supabase authentication and cloud storage for secure document processing. • Executed AI-powered document analysis pipelines enabling automated contract review, clause extraction, and legal summary generation through structured prompt engineering and streaming responses.",
+      technologies: ["Next.js", "TypeScript", "Google Gemini AI", "Supabase", "Document Processing"],
+      category: "featured",
+      date: "Nov 2025"
+    },
+    {
+      title: "AI Resume Chatbot (jai-llm-chatbot)",
+      description: "• Trained a conversational AI assistant using RAG architecture with ChromaDB vector database and Google Gemini, serving low-latency semantic retrieval responses through FastAPI REST endpoints. • Fine-tuned the base model using LoRA (Low-Rank Adaptation) techniques, optimizing inference performance for context-aware Q&A with custom embedding pipelines in Python.",
+      technologies: ["Python", "FastAPI", "ChromaDB", "Google Gemini", "RAG", "LoRA Fine-tuning"],
+      category: "featured",
+      date: "Sept 2025"
+    },
+    {
+      title: "Kaggle Loan Prediction Competition",
+      description: "• Ranked Top 10% (321 of 3,724 participants) training stacked ensemble models with XGBoost, LightGBM, and CatBoost, applying advanced feature engineering and pseudo-labeling techniques. • Optimized model performance using SMOTE for class imbalance, GridSearchCV hyperparameter tuning, and SHAP analysis for feature importance interpretation across 15+ behavioral variables.",
+      technologies: ["Python", "XGBoost", "LightGBM", "CatBoost", "scikit-learn", "SHAP", "SMOTE"],
+      category: "featured",
+      date: "Nov 2025"
+    }
+  ],
+  
+  certifications: [
+    {
+      title: "Y Combinator Vibecon 2025",
+      description: "Selected among 200 builders from 30,000+ global applicants",
+      type: "achievement"
+    },
+    {
+      title: "Kaggle Top 10%",
+      description: "Ranked 321 out of 3,724 participants in Loan Prediction Competition",
+      type: "achievement"
+    },
+    {
+      title: "McKinsey Forward",
+      description: "\"Super Learner\" certification",
+      type: "achievement"
+    },
+    {
+      title: "Machine Learning Specialization",
+      description: "Stanford University (Coursera)",
+      type: "certification"
+    },
+    {
+      title: "Data Analytics and Predictive Technologies",
+      description: "IIT-BHU, Varanasi",
+      type: "certification"
+    },
+    {
+      title: "Facebook Hacker Cup",
+      description: "Advanced to Round 3 of 4 in global competitive programming competition",
+      type: "achievement"
+    },
+    {
+      title: "Microsoft Imagine Cup",
+      description: "Semi-Finalist (Top 15% of participants)",
+      type: "achievement"
+    },
+    {
+      title: "Academic Excellence Award",
+      description: "Recipient for consistent performance (Top 5% of class)",
+      type: "achievement"
+    },
+    {
+      title: "Dean's List",
+      description: "JNTU-H, India",
+      type: "achievement"
     }
   ]
 };

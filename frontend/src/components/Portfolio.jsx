@@ -39,6 +39,7 @@ const Portfolio = () => {
   const [isEducationModalOpen, setIsEducationModalOpen] = useState(false);
   const [isSkillsModalOpen, setIsSkillsModalOpen] = useState(false);
   const [isProjectsModalOpen, setIsProjectsModalOpen] = useState(false);
+  const [isCertificationsModalOpen, setIsCertificationsModalOpen] = useState(false);
   // Magnifier state
   const [magPos, setMagPos] = useState({ x: 0, y: 0, show: false });
   const nameRef = React.useRef(null);
@@ -219,6 +220,19 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
+          {/* Certifications Section with modal trigger */}
+          <div className="section-item section-link modern-section-card" style={{ cursor: 'pointer' }} onClick={() => setIsCertificationsModalOpen(true)}>
+            <div className="section-accent" style={{ background: '#6c5ce7' }}></div>
+            <div className="section-main">
+              <div className="section-title">Certifications</div>
+              <div className="section-content">
+                <p className="section-preview">
+                  Achievements and credentials.<br/>
+                  <span className="about-teaser-link">View my accomplishments.</span>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Social Links */}
@@ -318,41 +332,49 @@ const Portfolio = () => {
           <div className="skills-content">
             <div className="skills-grid">
               <div className="skill-category">
-                <h3 className="category-title">Languages</h3>
+                <h3 className="category-title">Programming Languages</h3>
                 <div className="skill-tags">
-                  {mockData.skills.languages.map((skill, index) => (
+                  {mockData.skills.languages?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </div>
               <div className="skill-category">
-                <h3 className="category-title">Frameworks & Libraries</h3>
+                <h3 className="category-title">AI/LLM Ecosystem</h3>
                 <div className="skill-tags">
-                  {mockData.skills.frameworks.map((skill, index) => (
+                  {mockData.skills.aiLLM?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </div>
               <div className="skill-category">
-                <h3 className="category-title">J2EE Technologies</h3>
+                <h3 className="category-title">ML Frameworks</h3>
                 <div className="skill-tags">
-                  {mockData.skills.j2ee.map((skill, index) => (
+                  {mockData.skills.mlFrameworks?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </div>
               <div className="skill-category">
-                <h3 className="category-title">Web Technologies</h3>
+                <h3 className="category-title">Vector Databases</h3>
                 <div className="skill-tags">
-                  {mockData.skills.web.map((skill, index) => (
+                  {mockData.skills.vectorDatabases?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </div>
               <div className="skill-category">
-                <h3 className="category-title">Databases</h3>
+                <h3 className="category-title">Backend & APIs</h3>
                 <div className="skill-tags">
-                  {mockData.skills.databases.map((skill, index) => (
+                  {mockData.skills.backendAPIs?.map((skill, index) => (
+                    <span key={index} className="skill-tag">{skill}</span>
+                  ))}
+                </div>
+              </div>
+              <div className="skill-category">
+                <h3 className="category-title">Frontend</h3>
+                <div className="skill-tags">
+                  {mockData.skills.frontend?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
@@ -360,39 +382,47 @@ const Portfolio = () => {
               <div className="skill-category">
                 <h3 className="category-title">Cloud Platforms</h3>
                 <div className="skill-tags">
-                  {mockData.skills.cloud.map((skill, index) => (
+                  {mockData.skills.cloudPlatform?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </div>
               <div className="skill-category">
-                <h3 className="category-title">Development Tools</h3>
+                <h3 className="category-title">AWS Services</h3>
                 <div className="skill-tags">
-                  {mockData.skills.tools.map((skill, index) => (
+                  {mockData.skills.awsServices?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </div>
               <div className="skill-category">
-                <h3 className="category-title">IDEs</h3>
+                <h3 className="category-title">Databases</h3>
                 <div className="skill-tags">
-                  {mockData.skills.ides.map((skill, index) => (
+                  {mockData.skills.databases?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </div>
               <div className="skill-category">
-                <h3 className="category-title">Application Servers</h3>
+                <h3 className="category-title">Data & Workflow</h3>
                 <div className="skill-tags">
-                  {mockData.skills.servers.map((skill, index) => (
+                  {mockData.skills.dataWorkflow?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
               </div>
               <div className="skill-category">
-                <h3 className="category-title">Version Control</h3>
+                <h3 className="category-title">DevOps & Observability</h3>
                 <div className="skill-tags">
-                  {mockData.skills.versionControl.map((skill, index) => (
+                  {mockData.skills.devopsObservability?.map((skill, index) => (
+                    <span key={index} className="skill-tag">{skill}</span>
+                  ))}
+                </div>
+              </div>
+              <div className="skill-category">
+                <h3 className="category-title">Product Integrations</h3>
+                <div className="skill-tags">
+                  {mockData.skills.productIntegrations?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
@@ -400,7 +430,7 @@ const Portfolio = () => {
               <div className="skill-category">
                 <h3 className="category-title">Project Management</h3>
                 <div className="skill-tags">
-                  {mockData.skills.projectManagement.map((skill, index) => (
+                  {mockData.skills.projectManagement?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
@@ -408,7 +438,7 @@ const Portfolio = () => {
               <div className="skill-category">
                 <h3 className="category-title">Methodologies</h3>
                 <div className="skill-tags">
-                  {mockData.skills.methodologies.map((skill, index) => (
+                  {mockData.skills.methodologies?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
@@ -425,6 +455,7 @@ const Portfolio = () => {
                 <div key={index} className={`bento-item ${project.category}`} style={{ marginBottom: 16 }}>
                   <div className="project-header">
                     <h3 className="project-title">{project.title}</h3>
+                    {project.date && <span className="project-date" style={{ fontSize: '0.875rem', color: '#666', marginLeft: '8px' }}>{project.date}</span>}
                     <div className="project-technologies">
                       {project.technologies.map((tech, techIndex) => (
                         <span key={techIndex} className="tech-tag">{tech}</span>
@@ -446,6 +477,38 @@ const Portfolio = () => {
                 </div>
               ))}
             </div>
+          </div>
+        </Modal>
+        {/* Certifications Modal Popup */}
+        <Modal open={isCertificationsModalOpen} onClose={() => setIsCertificationsModalOpen(false)}>
+          <h2 style={{ fontWeight: 700, fontSize: '1.5rem', marginBottom: 16 }}>Certifications & Achievements</h2>
+          <div className="certifications-content">
+            {mockData.certifications?.filter(c => c.type === "achievement").length > 0 && (
+              <div style={{ marginBottom: '2rem' }}>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1rem', color: '#333' }}>Achievements</h3>
+                <div style={{ display: 'grid', gap: '1rem' }}>
+                  {mockData.certifications.filter(c => c.type === "achievement").map((item, index) => (
+                    <div key={index} style={{ padding: '1rem', background: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #6c5ce7' }}>
+                      <h4 style={{ fontWeight: 600, marginBottom: '0.5rem', color: '#1a1a1a' }}>{item.title}</h4>
+                      <p style={{ color: '#666', margin: 0 }}>{item.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            {mockData.certifications?.filter(c => c.type === "certification").length > 0 && (
+              <div>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1rem', color: '#333' }}>Certifications</h3>
+                <div style={{ display: 'grid', gap: '1rem' }}>
+                  {mockData.certifications.filter(c => c.type === "certification").map((item, index) => (
+                    <div key={index} style={{ padding: '1rem', background: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #00b894' }}>
+                      <h4 style={{ fontWeight: 600, marginBottom: '0.5rem', color: '#1a1a1a' }}>{item.title}</h4>
+                      <p style={{ color: '#666', margin: 0 }}>{item.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </Modal>
     </div>
