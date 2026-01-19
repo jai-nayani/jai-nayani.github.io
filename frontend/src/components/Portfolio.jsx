@@ -157,7 +157,7 @@ const Portfolio = () => {
         <div className="navigation-sections">
           {/* About Section with modal trigger */}
           <div className="section-item section-link modern-section-card" style={{ cursor: 'pointer' }} onClick={() => setIsAboutModalOpen(true)}>
-            <div className="section-accent" style={{ background: '#667eea' }}></div>
+            <div className="section-accent accent-blue"></div>
             <div className="section-main">
               <div className="section-title">About</div>
               <div className="section-content">
@@ -170,7 +170,7 @@ const Portfolio = () => {
           </div>
           {/* Work Experience Section with modal trigger */}
           <div className="section-item section-link modern-section-card" style={{ cursor: 'pointer' }} onClick={() => setIsWorkModalOpen(true)}>
-            <div className="section-accent" style={{ background: '#764ba2' }}></div>
+            <div className="section-accent accent-emerald"></div>
             <div className="section-main">
               <div className="section-title">Work Experience</div>
               <div className="section-content">
@@ -183,7 +183,7 @@ const Portfolio = () => {
           </div>
           {/* Education Section with modal trigger */}
           <div className="section-item section-link modern-section-card" style={{ cursor: 'pointer' }} onClick={() => setIsEducationModalOpen(true)}>
-            <div className="section-accent" style={{ background: '#ffb300' }}></div>
+            <div className="section-accent accent-amber"></div>
             <div className="section-main">
               <div className="section-title">Education</div>
               <div className="section-content">
@@ -196,7 +196,7 @@ const Portfolio = () => {
           </div>
           {/* Skills Section with modal trigger */}
           <div className="section-item section-link modern-section-card" style={{ cursor: 'pointer' }} onClick={() => setIsSkillsModalOpen(true)}>
-            <div className="section-accent" style={{ background: '#00b894' }}></div>
+            <div className="section-accent accent-teal"></div>
             <div className="section-main">
               <div className="section-title">Skills</div>
               <div className="section-content">
@@ -209,7 +209,7 @@ const Portfolio = () => {
           </div>
           {/* Projects Section with modal trigger */}
           <div className="section-item section-link modern-section-card" style={{ cursor: 'pointer' }} onClick={() => setIsProjectsModalOpen(true)}>
-            <div className="section-accent" style={{ background: '#e17055' }}></div>
+            <div className="section-accent accent-coral"></div>
             <div className="section-main">
               <div className="section-title">Projects</div>
               <div className="section-content">
@@ -222,7 +222,7 @@ const Portfolio = () => {
           </div>
           {/* Certifications Section with modal trigger */}
           <div className="section-item section-link modern-section-card" style={{ cursor: 'pointer' }} onClick={() => setIsCertificationsModalOpen(true)}>
-            <div className="section-accent" style={{ background: '#6c5ce7' }}></div>
+            <div className="section-accent accent-indigo"></div>
             <div className="section-main">
               <div className="section-title">Certifications</div>
               <div className="section-content">
@@ -488,7 +488,7 @@ const Portfolio = () => {
                 <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1rem', color: '#333' }}>Achievements</h3>
                 <div style={{ display: 'grid', gap: '1rem' }}>
                   {mockData.certifications.filter(c => c.type === "achievement").map((item, index) => (
-                    <div key={index} style={{ padding: '1rem', background: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #6c5ce7' }}>
+                    <div key={index} className="certification-card-hover" style={{ padding: '1rem', background: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #10b981', transition: 'all 0.3s ease' }}>
                       <h4 style={{ fontWeight: 600, marginBottom: '0.5rem', color: '#1a1a1a' }}>{item.title}</h4>
                       <p style={{ color: '#666', margin: 0 }}>{item.description}</p>
                     </div>
@@ -501,7 +501,7 @@ const Portfolio = () => {
                 <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1rem', color: '#333' }}>Certifications</h3>
                 <div style={{ display: 'grid', gap: '1rem' }}>
                   {mockData.certifications.filter(c => c.type === "certification").map((item, index) => (
-                    <div key={index} style={{ padding: '1rem', background: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #00b894' }}>
+                    <div key={index} className="certification-card-hover" style={{ padding: '1rem', background: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #3b82f6', transition: 'all 0.3s ease' }}>
                       <h4 style={{ fontWeight: 600, marginBottom: '0.5rem', color: '#1a1a1a' }}>{item.title}</h4>
                       <p style={{ color: '#666', margin: 0 }}>{item.description}</p>
                     </div>

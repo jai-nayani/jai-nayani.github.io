@@ -81,9 +81,11 @@
 }
 
 .photo-stack-close:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transform: scale(1.1);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.2) 0%, rgba(220, 38, 38, 0.2) 100%);
+  border-color: rgba(239, 68, 68, 0.4);
+  transform: scale(1.15) rotate(90deg);
+  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.25);
+  color: #ef4444;
 }
 
 .photo-stack-content {
@@ -161,9 +163,11 @@
 }
 
 .photo-stack-nav button:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transform: scale(1.1);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(59, 130, 246, 0.2) 100%);
+  border-color: rgba(16, 185, 129, 0.4);
+  transform: scale(1.15) rotate(5deg);
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.25);
+  color: #10b981;
 }
 
 .photo-stack-nav button:disabled {

@@ -27,7 +27,7 @@ const Certifications = () => {
                 <h2 className="section-heading mb-6">Achievements</h2>
                 <div className="certifications-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.5rem' }}>
                   {achievements.map((item, index) => (
-                    <Card key={index} className="hover:shadow-lg transition-shadow border-l-4 border-l-purple-500">
+                    <Card key={index} className="hover:shadow-lg transition-all duration-300 border-l-4 border-l-emerald-500 hover:border-l-teal-500 hover:scale-105 hover:-translate-y-1">
                       <CardHeader>
                         <CardTitle className="text-lg">{item.title}</CardTitle>
                       </CardHeader>
@@ -46,7 +46,7 @@ const Certifications = () => {
                 <h2 className="section-heading mb-6">Certifications</h2>
                 <div className="certifications-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.5rem' }}>
                   {certifications.map((item, index) => (
-                    <Card key={index} className="hover:shadow-lg transition-shadow border-l-4 border-l-green-500">
+                    <Card key={index} className="hover:shadow-lg transition-all duration-300 border-l-4 border-l-blue-500 hover:border-l-emerald-500 hover:scale-105 hover:-translate-y-1">
                       <CardHeader>
                         <CardTitle className="text-lg">{item.title}</CardTitle>
                       </CardHeader>
