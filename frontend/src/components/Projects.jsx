@@ -50,7 +50,7 @@ const Projects = () => {
                       <Button 
                         asChild 
                         variant="default"
-                        className="w-full"
+                        className="w-full bg-[#6366f1] text-white hover:bg-emerald-600"
                       >
                         <a 
                           href={project.githubUrl} 

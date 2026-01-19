@@ -479,7 +479,7 @@ const Portfolio = () => {
                         style={{
                           display: 'inline-block',
                           padding: '0.5rem 1.5rem',
-                          backgroundColor: 'var(--primary)',
+                          backgroundColor: '#6366f1',
                           color: 'white',
                           borderRadius: '0.375rem',
                           textDecoration: 'none',
@@ -487,7 +487,8 @@ const Portfolio = () => {
                           fontSize: '0.875rem',
                           transition: 'all 0.3s ease',
                           border: 'none',
-                          cursor: 'pointer'
+                          cursor: 'pointer',
+                          boxShadow: '0 2px 4px rgba(99, 102, 241, 0.2)'
                         }}
                         onMouseEnter={(e) => {
                           e.target.style.backgroundColor = '#059669';
@@ -495,9 +496,9 @@ const Portfolio = () => {
                           e.target.style.boxShadow = '0 4px 12px rgba(5, 150, 105, 0.3)';
                         }}
                         onMouseLeave={(e) => {
-                          e.target.style.backgroundColor = 'var(--primary)';
+                          e.target.style.backgroundColor = '#6366f1';
                           e.target.style.transform = 'scale(1)';
-                          e.target.style.boxShadow = 'none';
+                          e.target.style.boxShadow = '0 2px 4px rgba(99, 102, 241, 0.2)';
                         }}
                       >
                         Link
