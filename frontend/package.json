@@ -57,10 +57,11 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build",
+    "build": "node scripts/generate-gallery.js && craco build",
     "test": "craco test",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "generate-gallery": "node scripts/generate-gallery.js"
   },
   "browserslist": {
     "production": [
