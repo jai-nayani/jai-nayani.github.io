@@ -72,7 +72,7 @@ const Portfolio = () => {
             size="large"
             onClick={handleProfileClick}
             imageSrc="/images/profile/profile-photo.jpg?v=3&cache=false" // Strong cache-busting for new image
-            alt="Jai Adithya Ram Nayani"
+            alt="Jai Adithya Nayani"
           />
         </div>
         <div
@@ -86,7 +86,7 @@ const Portfolio = () => {
             onMouseLeave={handleNameMouseLeave}
             style={{ display: 'inline-block', position: 'relative', zIndex: 1 }}
           >
-            Jai Adithya Ram Nayani
+            Jai Adithya Nayani
             {magPos.show && (
               <span
                 className="profile-name-mask"
@@ -145,7 +145,7 @@ const Portfolio = () => {
                   whiteSpace: 'nowrap',
                 }}
               >
-                Jai Adithya Ram Nayani
+                Jai Adithya Nayani
               </span>
             </span>
           )}
@@ -237,15 +237,15 @@ const Portfolio = () => {
 
         {/* Social Links */}
         <div className="social-links">
-          <a href="tel:+14122249552" className="social-btn">
+          <a href="tel:+14694375178" className="social-btn">
             <span className="social-icon">📞</span>
             phone
           </a>
-          <a href="mailto:adi.nayani1427@gmail.com" className="social-btn">
+          <a href="mailto:n.jaiadithya@gmail.com" className="social-btn">
             <span className="social-icon">✉️</span>
             email
           </a>
-          <a href="https://www.linkedin.com/in/jai-adithya-ram-nayaniyani-20363b1a0/" target="_blank" rel="noopener noreferrer" className="social-btn">
+          <a href="https://www.linkedin.com/in/jaiadithyanayani/" target="_blank" rel="noopener noreferrer" className="social-btn">
             <span className="social-icon">💼</span>
             linkedin
           </a>
@@ -258,7 +258,7 @@ const Portfolio = () => {
         {/* Footer */}
         <div className="footer" style={{ justifyContent: 'center', textAlign: 'center' }}>
           <div className="footer-signature">
-            Jai Adithya Ram
+            Jai Adithya Nayani
           </div>
         </div>
 
@@ -310,18 +310,20 @@ const Portfolio = () => {
                 </div>
                 <div className="education-details">
                   <h4 className="school-name">{edu.school}</h4>
-                  <div className="gpa-info">
-                    <span className="gpa">GPA: {edu.gpa}</span>
-                  </div>
+                  {edu.gpa && (
+                    <div className="gpa-info">
+                      <span className="gpa">GPA: {edu.gpa}</span>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
             <div className="education-summary" style={{ marginTop: 24 }}>
               <h3>Academic Highlights</h3>
               <p>
-                Pursuing advanced studies in Computer Science with focus on software engineering, 
-                cloud computing, and full-stack development. Consistently maintained high academic 
-                performance while gaining practical experience through internships and projects.
+                Master of Science in Computer Science with focus on machine learning, 
+                data engineering, and cloud-native systems. Combines strong academic foundation 
+                with 7+ years of production ML and GenAI experience across compliance, healthcare, and fintech.
               </p>
             </div>
           </div>
@@ -356,6 +358,14 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className="skill-category">
+                <h3 className="category-title">MLOps & Model Governance</h3>
+                <div className="skill-tags">
+                  {mockData.skills.mlopsGovernance?.map((skill, index) => (
+                    <span key={index} className="skill-tag">{skill}</span>
+                  ))}
+                </div>
+              </div>
+              <div className="skill-category">
                 <h3 className="category-title">Vector Databases</h3>
                 <div className="skill-tags">
                   {mockData.skills.vectorDatabases?.map((skill, index) => (
@@ -380,6 +390,14 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className="skill-category">
+                <h3 className="category-title">Data Engineering</h3>
+                <div className="skill-tags">
+                  {mockData.skills.dataEngineering?.map((skill, index) => (
+                    <span key={index} className="skill-tag">{skill}</span>
+                  ))}
+                </div>
+              </div>
+              <div className="skill-category">
                 <h3 className="category-title">Cloud Platforms</h3>
                 <div className="skill-tags">
                   {mockData.skills.cloudPlatform?.map((skill, index) => (
@@ -388,25 +406,9 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className="skill-category">
-                <h3 className="category-title">AWS Services</h3>
-                <div className="skill-tags">
-                  {mockData.skills.awsServices?.map((skill, index) => (
-                    <span key={index} className="skill-tag">{skill}</span>
-                  ))}
-                </div>
-              </div>
-              <div className="skill-category">
                 <h3 className="category-title">Databases</h3>
                 <div className="skill-tags">
                   {mockData.skills.databases?.map((skill, index) => (
-                    <span key={index} className="skill-tag">{skill}</span>
-                  ))}
-                </div>
-              </div>
-              <div className="skill-category">
-                <h3 className="category-title">Data & Workflow</h3>
-                <div className="skill-tags">
-                  {mockData.skills.dataWorkflow?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>
@@ -423,22 +425,6 @@ const Portfolio = () => {
                 <h3 className="category-title">Product Integrations</h3>
                 <div className="skill-tags">
                   {mockData.skills.productIntegrations?.map((skill, index) => (
-                    <span key={index} className="skill-tag">{skill}</span>
-                  ))}
-                </div>
-              </div>
-              <div className="skill-category">
-                <h3 className="category-title">Project Management</h3>
-                <div className="skill-tags">
-                  {mockData.skills.projectManagement?.map((skill, index) => (
-                    <span key={index} className="skill-tag">{skill}</span>
-                  ))}
-                </div>
-              </div>
-              <div className="skill-category">
-                <h3 className="category-title">Methodologies</h3>
-                <div className="skill-tags">
-                  {mockData.skills.methodologies?.map((skill, index) => (
                     <span key={index} className="skill-tag">{skill}</span>
                   ))}
                 </div>

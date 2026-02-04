@@ -1,61 +1,59 @@
 export const mockData = {
-  name: "Jai Adithya Ram Nayani",
-  title: "Full-Stack AI Engineer",
-  about: "Full-Stack AI Engineer with 4+ years building production systems across healthcare SaaS, fintech, and accessibility platforms. Shipped LLM-powered applications using RAG pipelines, multi-agent architectures (Google Gemini 2.0, LangChain, ChromaDB), and scalable backends with Python, FastAPI, Next.js, TypeScript, PostgreSQL, and AWS. Transformed monolithic fintech platforms into microservices processing 50TB+ datasets. Built HIPAA-aligned healthcare automation serving 50+ medical facilities with 50-70% operational time savings. Proven ability to ship 0→1 products at startup velocity while bridging engineering, product, and business stakeholders. Y Combinator Vibecon 2025 selectee (Top 200 from 30,000+ applicants) | Kaggle Top 10% (321/3,724) | McKinsey Forward \"Super Learner\"",
-  
+  name: "Jai Adithya Nayani",
+  title: "AI/ML Engineer | GenAI Specialist",
+  about: "AI/ML Engineer and Generative AI specialist with 7+ years of experience building production-grade machine learning and GenAI systems at scale across financial crime, regulatory compliance, healthcare payment integrity, and identity verification. At Socure, I design and deploy enterprise Generative AI platforms that sit directly in high-stakes decision workflows—architecting a GenAI Explainability Engine using LangChain and self-hosted LLMs (Llama 3) that converts fraud model signals into regulator-ready natural language explanations, reducing analyst escalations by 40% and case review times by 90%. Built a RAG-based Global Watchlist Compliance Copilot spanning 1,000+ sanctions and PEP lists with sub-200ms semantic retrieval and 96% retrieval accuracy. Experienced in LoRA/QLoRA fine-tuning with Hugging Face PEFT, LLM guardrails with hallucination detection and factual grounding, and multi-agent orchestration with LangGraph. Previously at Cotiviti and Experian, I built large-scale ML systems processing billions of records monthly—driving $15B+ in flagged claims annually, 42% prepay review migration, and 45% program value growth. Strong MLOps, SHAP explainability, bias monitoring, and cloud-native deployment on AWS and Azure.",
+
   workExperience: [
     {
-      title: "Founding Engineer",
-      company: "Stealth AI Startup (Healthcare) | Remote USA",
-      duration: "May 2025 – Oct 2025",
-      description: "• Developed a HIPAA-aligned healthcare B2B platform using React, Next.js, and Node.js (NestJS), automating scheduling, billing, pharmacy, and financial workflows for 50+ medical facilities with 50-70% operational time savings. • Implemented data governance controls with PostgreSQL OLAP reporting, MongoDB state management, and AWS Cognito/KMS for authentication and encryption, ensuring RBAC authorization and audit compliance across patient data workflows. • Built Python-based OCR pipelines using Tesseract for invoice ingestion, deployed via Docker containers, and integrated n8n orchestration with Twilio/WhatsApp notifications for real-time appointment confirmations."
+      title: "AI/ML Engineer",
+      company: "Socure | Remote, US",
+      duration: "July 2024 – Present",
+      description: "• Architected GenAI Explainability Engine using LangChain and self-hosted LLMs (Llama 3), transforming Sigma Fraud Model risk scores into natural-language explanations for analysts reviewing identity verification decisions. • Built RAG-based Compliance Copilot for Global Watchlist Screening using vector search over 1,000+ sanctions and PEP lists, implementing fuzzy name matching with 88% name similarity accuracy and entity correlation algorithms. • Designed vector search infrastructure using Pinecone and pgvector, enabling semantic retrieval across millions of adverse media records with sub-200ms query latency and 96% retrieval accuracy. • Implemented two-stage scoring pipeline combining Name Match and Entity Correlation modules, reducing false positives by 30% compared to legacy rule-based compliance solutions. • Applied LoRA fine-tuning on Llama 3 using Hugging Face PEFT for compliance-specific terminology, reducing inference costs by 50% while improving entity extraction accuracy on sanctions datasets. • Implemented LLM guardrails with hallucination detection and factual grounding validation against source documents, ensuring AI-generated explanations remained traceable for regulatory audits. • Designed multi-agent orchestration using LangGraph for complex compliance workflows, enabling autonomous document retrieval, cross-reference validation, and iterative reasoning with human oversight. • Reduced analyst escalation rates by 40% and case review times by 90% through intelligent pre-population of compliance findings and automated evidence gathering."
     },
     {
-      title: "Software Engineer",
-      company: "George Mason University | Virginia",
-      duration: "January 2024 – May 2025",
-      description: "• Designed accessible web modules for the Mason LIFE platform using React, TypeScript, and PostgreSQL, delivering WCAG-compliant interfaces that streamlined admissions and student resource workflows for neurodiverse learners. • Integrated RESTful APIs with AWS Athena analytics, Dynamic Forms, and payment gateways, enabling real-time data orchestration across MySQL and PostgreSQL environments for high-volume educational data processing. • Configured CI/CD pipelines using GitHub Actions and Jenkins, deploying Docker containerized applications on AWS infrastructure (EC2, S3, Lambda) with Kubernetes orchestration for scalable, zero-downtime releases. • Validated automated test suites with JUnit and Mockito, implementing Google Analytics performance monitoring to ensure accessibility compliance and rapid troubleshooting across cross-functional development teams."
+      title: "ML Engineer",
+      company: "Cotiviti Holdings | Hyderabad, India",
+      duration: "March 2021 – July 2023",
+      description: "• Built probability scoring models for Clinical Chart Validation using Python and scikit-learn, prioritizing high-risk claims for certified auditors and achieving 42% prepay review migration with 45% program value growth. • Developed anomaly detection pipelines for FWA Pattern Review using gradient boosting and clustering algorithms, identifying suspicious provider billing patterns contributing to $15B+ in flagged claims annually. • Engineered NLP extraction models for medical record coding using spaCy and Hugging Face Transformers, automating DRG validation from unstructured clinical documents and reducing manual review time by 60%. • Designed HCC risk adjustment models for DxCG Intelligence platform, predicting members with highest probability of missing conditions to improve RAF score accuracy across 147M+ members. • Constructed end-to-end ML pipelines on AWS (SageMaker, S3, Lambda) and Azure ML Studio, implementing model versioning, A/B testing, and automated retraining with MLflow experiment tracking for production governance. • Established model governance framework including bias detection modules, explainability dashboards using SHAP, and fairness metrics ensuring responsible ML deployment in healthcare."
     },
     {
-      title: "Software Engineer",
-      company: "Humint Global Technologies | India",
-      duration: "January 2021 – July 2023",
-      description: "• Engineered data pipelines processing 50TB+ datasets using Python, PySpark, and Apache Airflow DAG orchestration across MySQL, Aurora, and Snowflake, accelerating data throughput by 50% for real-time financial analytics. • Created dynamic frontend interfaces using React with TypeScript and Material UI, deploying Cypress-based automated testing suites that reduced UI defect rates by 35% across customer-facing fintech applications. • Deployed containerized microservices on AWS (S3, Lambda, Glue, EventBridge, SNS, SQS) with Docker and Kubernetes, implementing Splunk and CloudWatch monitoring to reduce deployment failures by 30%. • Transformed monolithic fintech platforms into microservices using Java, Spring Boot, and Spring Cloud Gateway, implementing OAuth 2.0 and API Gateway rate limiting for PCI-compliant transaction flows."
+      title: "Data Scientist",
+      company: "Experian | Hyderabad, India",
+      duration: "December 2019 – March 2021",
+      description: "• Built DataSights analytics platform with config-driven ETL modules using Python and PySpark, implementing 20+ automated data profiling rules across 361 financial attributes for risk assessment. • Improved data accuracy from 78% to 96% through automated validation pipelines including null checks, referential integrity verification, statistical outlier detection, and format standardization. • Developed risk scoring models using scikit-learn and XGBoost to predict compliance violations and flag high-risk entities, achieving 85% precision in identifying KYC anomalies across banking portfolios. • Created feature engineering pipelines extracting 100+ derived attributes from raw financial data, including beneficial ownership patterns, transaction velocity metrics, and entity relationship signals. • Deployed Perpetual KYC monitoring system on AWS using Lambda and Glue for continuous sanctions screening, processing watchlist updates and triggering risk re-assessment workflows automatically. • Implemented customer segmentation models identifying high-value vs. high-risk client clusters, enabling targeted compliance interventions and reducing false positive rates by 30%."
+    },
+    {
+      title: "Python Developer",
+      company: "Infocusp Innovations | Hyderabad, India",
+      duration: "January 2018 – November 2019",
+      description: "• Built ETL pipelines using Python and Apache Airflow, authoring DAG-based workflows with scheduling, retry logic, and run monitoring to automate batch data processing across 500K+ daily records. • Implemented data quality validation layer with schema checks, null detection, and statistical outlier flagging, improving data accuracy from 78% to 96% before downstream analytics consumption. • Developed Flask REST APIs exposing versioned endpoints for data access, implementing request validation, pagination patterns, and consistent error handling for internal analytics consumers. • Deployed serverless data processing jobs on Azure Functions and Blob Storage, automating file ingestion and transformation workflows that reduced manual processing time by 60%. • Created automated test suites using pytest covering unit and integration scenarios, establishing CI pipelines with Jenkins that reduced regression defects by 35% across releases."
     }
   ],
-  
+
   education: [
     {
-      school: "George Mason University, Virginia",
+      school: "George Mason University",
       degree: "Master of Science, Computer Science",
-      duration: "May 2025",
-      gpa: "3.60"
-    },
-    {
-      school: "Jawaharlal Nehru Technological University (JNTU-H), India",
-      degree: "Bachelors, Computer Science Engineering",
-      duration: "July 2023", 
-      gpa: "3.85"
+      duration: "Graduated",
+      gpa: ""
     }
   ],
-  
+
   skills: {
-    languages: ["Python", "Ruby on Rails", "SQL", "Java", "JavaScript", "C", "C++", "R", "Bash"],
-    aiLLM: ["OpenAI API", "Anthropic Claude", "LLaMA", "LlamaIndex", "LangSmith", "MLflow", "Weights & Biases"],
-    mlFrameworks: ["PyTorch", "TensorFlow", "Hugging Face Transformers", "scikit-learn", "Keras"],
-    vectorDatabases: ["Pinecone", "Qdrant", "FAISS", "pgvector", "Weaviate", "ChromaDB"],
-    backendAPIs: ["GraphQL", "gRPC", "Prisma", "tRPC", "FastAPI", "NestJS", "Node.js", "Express"],
-    cloudPlatform: ["GCP (BigQuery, Vertex AI)", "Azure", "Vercel", "Cloudflare", "Fly.io"],
-    awsServices: ["ECS", "Fargate", "RDS", "IAM", "CloudFormation", "CDK", "EC2", "S3", "Lambda", "Cognito", "KMS"],
-    databases: ["Redis", "Elasticsearch", "DynamoDB", "Redshift", "Databricks", "PostgreSQL", "MongoDB", "MySQL", "Snowflake"],
-    dataWorkflow: ["Kafka", "Pandas", "NumPy", "dbt", "Prefect", "Temporal", "Celery", "Jupyter Notebook", "Apache Airflow", "PySpark"],
-    devopsObservability: ["Prometheus", "Grafana", "Datadog", "ArgoCD", "ELK Stack", "Loki", "PagerDuty", "PostHog", "Git", "Sentry", "Helm", "Docker", "Kubernetes", "Jenkins", "GitHub Actions"],
-    frontend: ["Tailwind CSS", "Redux", "Chakra UI", "Next.js", "React.js", "TypeScript", "Angular", "Material UI"],
-    productIntegrations: ["Stripe", "OAuth", "WebSockets", "Segment", "Mixpanel", "Algolia", "Figma"],
-    projectManagement: ["Jira", "Confluence", "Notion"],
-    methodologies: ["Agile", "Scrum", "SDLC"]
+    languages: ["Python", "SQL", "Java", "JavaScript", "TypeScript", "Bash", "C++"],
+    aiLLM: ["LLMs", "RAG", "Prompt Engineering", "LangChain", "LangGraph", "LlamaIndex", "AutoGen", "OpenAI GPT-4", "Anthropic Claude", "Llama 3", "Hugging Face", "Hugging Face Transformers", "PEFT/LoRA", "Sentence Transformers", "spaCy"],
+    mlFrameworks: ["PyTorch", "TensorFlow", "scikit-learn", "XGBoost", "LightGBM", "Keras", "Pandas", "NumPy", "OpenCV"],
+    mlopsGovernance: ["MLflow", "Weights & Biases", "Azure ML Studio", "AWS SageMaker", "Model Versioning", "A/B Testing", "SHAP", "Drift Detection", "CI/CD", "Jenkins", "GitHub Actions"],
+    vectorDatabases: ["Pinecone", "pgvector", "FAISS", "ChromaDB", "Weaviate", "Elasticsearch"],
+    dataEngineering: ["Apache Spark (PySpark)", "Apache Airflow", "Kafka", "AWS Glue", "Snowflake", "dbt", "ETL/ELT Pipelines"],
+    cloudPlatform: ["AWS (EKS, Lambda, S3, Glue, SageMaker, RDS, EventBridge, CloudFormation)", "Azure (ML Studio, AKS, DevOps, Blob Storage)"],
+    devopsObservability: ["Docker", "Kubernetes", "Helm", "Terraform", "Jenkins", "GitHub Actions", "ArgoCD", "Prometheus", "Grafana", "CI/CD", "TDD"],
+    backendAPIs: ["FastAPI", "Flask", "Spring Boot", "NestJS", "Node.js", "GraphQL", "REST APIs"],
+    frontend: ["React", "Next.js", "Redux"],
+    databases: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "DynamoDB"],
+    productIntegrations: ["Twilio", "Stripe", "OAuth 2.0", "Tesseract"]
   },
-  
+
   projects: [
     {
       title: "Aqua-Sentinel: Real-Time AI Agents for Water Crisis Prevention",
@@ -90,52 +88,37 @@ export const mockData = {
       githubUrl: "https://github.com/jai-nayani/Kaggle-Loan-Prediction-"
     }
   ],
-  
+
   certifications: [
     {
-      title: "Y Combinator Vibecon 2025",
-      description: "Selected among 200 builders from 30,000+ global applicants",
-      type: "achievement"
-    },
-    {
-      title: "Kaggle Top 10%",
-      description: "Ranked 321 out of 3,724 participants in Loan Prediction Competition",
-      type: "achievement"
-    },
-    {
-      title: "McKinsey Forward",
-      description: "\"Super Learner\" certification",
-      type: "achievement"
-    },
-    {
-      title: "Machine Learning Specialization",
-      description: "Stanford University (Coursera)",
+      title: "AWS Certified Generative AI Developer – Professional",
+      description: "Cloud & AI certification",
       type: "certification"
     },
     {
-      title: "Data Analytics and Predictive Technologies",
-      description: "IIT-BHU, Varanasi",
+      title: "Microsoft Azure Data Scientist Associate",
+      description: "Cloud & AI certification",
       type: "certification"
     },
     {
-      title: "Facebook Hacker Cup",
-      description: "Advanced to Round 3 of 4 in global competitive programming competition",
-      type: "achievement"
+      title: "NVIDIA Certified Associate: Generative AI Multimodal",
+      description: "Generative AI certification",
+      type: "certification"
     },
     {
-      title: "Microsoft Imagine Cup",
-      description: "Semi-Finalist (Top 15% of participants)",
-      type: "achievement"
+      title: "Oracle Cloud Infrastructure 2025 Foundations Associate",
+      description: "Cloud foundations certification",
+      type: "certification"
     },
     {
-      title: "Academic Excellence Award",
-      description: "Recipient for consistent performance (Top 5% of class)",
-      type: "achievement"
+      title: "Oracle Cloud Infrastructure 2025 AI Foundations Associate",
+      description: "Cloud AI certification",
+      type: "certification"
     },
     {
-      title: "Dean's List",
-      description: "JNTU-H, India",
-      type: "achievement"
+      title: "Databricks Generative AI Fundamentals",
+      description: "Generative AI fundamentals",
+      type: "certification"
     }
   ]
 };
